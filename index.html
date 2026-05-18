@@ -74,6 +74,16 @@
       background: #eef2ff;
       padding: 20px;
       border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      margin-bottom: 10px;
+      color: #0f172a;
     }
 
     .skills {
@@ -90,6 +100,21 @@
       font-size: 0.9rem;
     }
 
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      background: #0f172a;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background: #1e293b;
+      text-decoration: none;
+    }
+
     footer {
       text-align: center;
       padding: 30px;
@@ -103,6 +128,25 @@
 
     a:hover {
       text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      .profile-photo {
+        width: 140px;
+        height: 140px;
+      }
+
+      section {
+        padding: 22px;
+      }
     }
   </style>
 </head>
@@ -122,10 +166,11 @@
     <section>
       <h2>About Me</h2>
       <p>
-        I am an Electrical and Telecommunications Engineering student with a strong passion for Data Science,
-        Artificial Intelligence, and technology-driven innovation. I enjoy solving real-world problems using
-        data analytics, machine learning, and engineering principles. My goal is to combine engineering and
-        data science to build impactful solutions in energy, telecommunications, and community-centered technology.
+        I am an Electrical and Telecommunications Engineering student and aspiring Data Scientist with a strong passion
+        for technology, artificial intelligence, and community-centered innovation. What makes me unique is my ability
+        to combine engineering knowledge with data-driven thinking to solve real-world problems. I am especially
+        interested in climate change, sustainable infrastructure, telecommunications, and using data science to build
+        smarter systems that improve lives and strengthen communities.
       </p>
     </section>
 
@@ -140,6 +185,8 @@
         <div class="skill">Data Visualization</div>
         <div class="skill">Electrical Engineering</div>
         <div class="skill">Telecommunications</div>
+        <div class="skill">Problem Solving</div>
+        <div class="skill">Communication</div>
       </div>
     </section>
 
@@ -150,8 +197,8 @@
         <div class="project-card">
           <h3>Power Source Detection System</h3>
           <p>
-            Built a data-driven project to estimate power sources using voltage and frequency data.
-            Applied machine learning and statistical analysis techniques to classify grid, solar,
+            A data-driven project that estimates power sources using voltage and frequency data.
+            It applies statistical analysis and machine learning concepts to classify grid, solar,
             and generator usage patterns.
           </p>
         </div>
@@ -159,16 +206,16 @@
         <div class="project-card">
           <h3>Ogiek Language Preservation Platform</h3>
           <p>
-            Designed a digital language archiving concept for preserving and documenting the Ogiek language
-            using audio processing, databases, and web technologies.
+            A digital language preservation concept designed to help document and protect the Ogiek language
+            through audio recording, metadata collection, databases, and web technologies.
           </p>
         </div>
 
         <div class="project-card">
           <h3>Data Science Portfolio</h3>
           <p>
-            Worked on multiple data analytics and visualization projects involving Python, SQL,
-            dashboards, and machine learning concepts.
+            A collection of practical data analysis and visualization projects involving Python, SQL,
+            dashboards, exploratory data analysis, and machine learning concepts.
           </p>
         </div>
 
@@ -176,16 +223,26 @@
     </section>
 
     <section>
-      <h2>Education</h2>
+      <h2>Education & Learning</h2>
       <p>
         Bachelor’s Degree in Electrical & Telecommunications Engineering<br>
-        Currently pursuing Data Science studies and practical projects through online learning programs.
+        Currently building practical skills in Data Science, Artificial Intelligence, Python, SQL,
+        machine learning, and data visualization through online learning and personal projects.
       </p>
     </section>
 
     <section>
+      <h2>Achievements & Certifications</h2>
+      <p>
+        I am continuously developing my technical and professional skills through engineering coursework,
+        data science training, mentorship programs, and practical portfolio projects.
+      </p>
+      <a href="resume.pdf" class="button" target="_blank">View My Resume</a>
+    </section>
+
+    <section>
       <h2>Contact</h2>
-      <p>Email: kiptooandrew14@gmail.com</p>
+      <p>Email: <a href="mailto:kiptooandrew14@gmail.com">kiptooandrew14@gmail.com</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/andrew-kiptoo-739515278/" target="_blank">Andrew Kiptoo on LinkedIn</a></p>
       <p>GitHub: <a href="https://github.com/andtoo14" target="_blank">github.com/andtoo14</a></p>
     </section>
